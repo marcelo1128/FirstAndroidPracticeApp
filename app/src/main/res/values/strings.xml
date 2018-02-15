@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Practice</string>
+    <string name="button_activity">Next!!</string>
+    <string name="backButton">Back!</string>
+    <string name="test_view">look here!</string>
+    <string name="dStudent">Delete Student From DB</string>
+    <string name="dbShow">Show Details</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="saveB">SAVE</string>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.practice.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <!--android:scrollbars="vertical" Makes the text view into a scrollable, must add textView
+    .setMovementMethod(new ScrollingMovementMethod()); in the mainActivity-->
+    <TextView
+        android:id="@+id/showChart"
+        android:layout_width="399dp"
+        android:layout_height="327dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="3dp"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:text=" "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/addStudent"
+        android:layout_width="387dp"
+        android:layout_height="46dp"
+        android:onClick="clickToShowStudentFragment"
+        android:text="Add Student To DB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.812" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="382dp"
+        android:layout_height="53dp"
+        android:onClick="clickToShowChart2"
+        android:text="@string/button_activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dStudent"
+        android:onClick="clickToDeleteFragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/nextButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <Button
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dbShow"
+        android:onClick="showDetails"
+        app:layout_constraintBottom_toTopOf="@+id/addStudent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showChart"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>

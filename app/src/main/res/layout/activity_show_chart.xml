@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.practice.showChartActivity">
+
+    <Button
+        android:id="@+id/bBack"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="456dp"
+        android:onClick="configureBackToMain2"
+        android:text="@string/backButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/showChart"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="41dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="408dp"
+        android:onClick="showChart"
+        android:text="Testing Text Edit"
+        app:layout_constraintBottom_toTopOf="@+id/bBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="41dp"
+        android:layout_marginLeft="40dp" />
+
+    <TextView
+        android:id="@+id/testView"
+        android:layout_width="122dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="359dp"
+        android:text="@string/test_view"
+        app:layout_constraintBottom_toTopOf="@+id/showChart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/background_light"
+        android:src="@drawable/giphy"
+        app:layout_constraintBottom_toTopOf="@+id/testView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="50dp" />
+
+</android.support.constraint.ConstraintLayout>
